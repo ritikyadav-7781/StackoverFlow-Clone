@@ -13,7 +13,7 @@ app.use(express.urlencoded({ limit: "30mb", extended: true })); //.urlencoded():
 // Enable CORS for a specific origin (in this case, allowing requests from 'https://stack-over-flow-clone-8z10.onrender.com')
 const corsOptions = {
   // origin: "http://localhost:3000",
-  origin: "https://stackoverflow-clone-1-sbty.onrender.com/",
+  origin: "https://stackoverflow-clone-u4vh.onrender.com/",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
