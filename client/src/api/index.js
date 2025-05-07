@@ -3,7 +3,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://stackoverflow-clone-u4vh.onrender.com/",
+  baseURL: "https://stackoverflow-clone-u4vh.onrender.com",
   // baseURL: "http://localhost:5000",
 });
 
