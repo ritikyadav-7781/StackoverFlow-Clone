@@ -1,0 +1,28 @@
+import * as api from "../api";
+
+export const fetchAllUsers = () => async (dispatch) => {
+  try {
+    const { data } = await api.fetchAllUsers();
+    dispatch({ type: "FETCH_USERS", payload: data });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const updateProfile = (id, updateData) => async (dispatch) => {
+  try {
+    const { data } = await api.updateProfile(id, updateData);
+    dispatch({ type: "UPDATE_CURRENT_USER", payload: data });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const postImage = (id, profileImage) => async (dispatch) => {
+  try {
+    const { data } = await api.postImage(id, profileImage);
+    dispatch({ type: "UPDATE_CURRENT_USER", payload: data });
+  } catch (error) {
+    console.log(error);
+  }
+};
