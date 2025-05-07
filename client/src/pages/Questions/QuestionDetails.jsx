@@ -22,8 +22,8 @@ const QuestionDetails = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const location = useLocation();
-  // const url = "https://stackoverflow-clone-tiwu.onrender.com";
-  const url = "http://localhost:5000";
+  const url = "https://stackoverflow-clone-u4vh.onrender.com";
+  // const url = "http://localhost:5000";
   const User = useSelector((state) => state.currentUserReducer);
   const handlePostAnswer = (e, answerlength) => {
     e.preventDefault();

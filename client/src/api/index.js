@@ -3,8 +3,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  // baseURL: "https://stackoverflow-clone-tiwu.onrender.com",
-  baseURL: "http://localhost:5000",
+  baseURL: "https://stackoverflow-clone-1-sbty.onrender.com/",
+  // baseURL: "http://localhost:5000",
 });
 
 API.interceptors.request.use((req) => {
